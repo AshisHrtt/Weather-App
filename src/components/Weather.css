@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.weather{
+    place-self: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    background-image: linear-gradient(45deg,#2f4680,#500ae4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dark-mode {
+    background-color: #000000 !important;
+    background-image: none !important;
+    color: #ecf0f1;
+  }
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.search-bar input{
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #626262;
+    background: #ebfffc;
+    font-size: 18px;
+}
+.search-bar img{
+    width: 50px;
+    padding: 15px;
+    border-radius: 50%;
+    background: #ebfffc;
+    cursor: pointer;
+
+}
+.weather-icon{
+width: 150px;
+margin: 30px 0;
+
+}
+.temperature{
+    color: #fff;
+    font-size: 80px;
+    line-height: 1;
+}
+.location{
+    color: #fff;
+    font-size: 40px;
+
+}
+.weatherdata{
+    width: 100%;
+    margin-top: 60px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+.weatherdata .col{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+}
+.weatherdata .col span{
+    display: block;
+    font-size: 16px;
+}
+.weatherdata .col img{
+    width: 50px;
+    margin-top: 10px;
+
+}
+/* Dark Mode Toggle Button */
+.toggle-dark-mode {
+    position: fixed;
+    top: 20px;
+    left: 50%;  
+    transform: translateX(-50%);
+  }
+  
+  .toggle-dark-mode button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+  }
+  
+  .dark-mode .toggle-dark-mode button {
+    background-color: #788de9;
+    color: white;
+  }
